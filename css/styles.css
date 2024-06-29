@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(25, 25, 250);
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color:black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.banner {
+    color: rgb(25, 25, 250);
+    text-shadow: 0 0 10px #fff;
+    font-weight: bold;
+    font-size:50px;
+}
+
+.banner:hover {
+    color: rgb(25, 25, 250);
+    text-shadow: 0 0 20px rgba(72, 245, 37, 0.5);
+}
+
+.welinfo {
+    background-color: rgb(47, 65, 228);
+    border-radius: 30px;
+    font-size:larger;
+    opacity: 50%;
+    padding: 10px 0px;
+}
+
+.welinfo:hover {
+    border-radius: 30px;
+    font-size:larger;
+     height: 150px;
+}
+
+.background-image {
+    position: relative;
+    background-image: url('images/family.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center; 
+    padding: 50px 20px;
+}
+
+.background-image h2,
+.background-image p {
+    position: relative;
+    z-index: 1;
+}
+
+.background-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    background-color: rgb(25, 25, 250);
+    border-top: 1px solid white;
+}
+main {
+    background-color: white;
+    height: 375px;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.c1 {
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    width: 250px;
+    font-size: large;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    height: 320px;
+}
+
+.c2 {
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    width: 250px;
+    font-size: large;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    height: 320px;
+}
+
+.c3 {
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    width: 250px;
+    font-size: large;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 10px; 
+    height: 320px;
+}
+
+.c5 {
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 0px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.c6 {
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.c7 {
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 10px; 
+}
+
+.c4 {
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 10px; 
+}
+
+.c1:hover, .c2:hover,.c3:hover,.c4:hover, .c5:hover {
+    width: 260px;
+    box-shadow: 0 0 20px rgba(72, 245, 37, 0.5);
+}
+
+.policy {
+    background-color:aqua;
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-right: 10%;
+    text-align: center;
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contactcard {
+    background-color:aqua;
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.searchcard {
+    background-color:aqua;
+    width: 40%;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(228, 224, 224);
+    box-shadow: 0 0 20px rgba(25, 25, 250, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.searchbox {
+    height: 30px;
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 5px;   
+}
+
+.searchbtn {
+    background-color: blue;
+    border:#fff;
+    width: 100px;
+    height: 40px;
+    font-size: large;
+    border-radius: 50px;
+    color: white;
+    font-size: large; 
+}
+
+.policy:hover, .contactcard:hover, .searchcard:hover {
+    box-shadow: 0 0 20px rgba(72, 245, 37, 0.5);
+}
+
+.submitt {
+    background-color: blue;
+    border-radius: 1px solid white;
+    border:#fff;
+    width: 100%;
+    height: 40px;
+    font-size: large;
+    border-radius: 50px;
+    color: white;
+    font-size: large;
+}
+
+.tbox {
+    height: 30px;
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
